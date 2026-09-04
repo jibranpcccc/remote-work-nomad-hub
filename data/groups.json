@@ -1,0 +1,512 @@
+[
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-1",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "1,630+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-1",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-2",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "2,060+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-2",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-3",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "2,490+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-3",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-4",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "2,920+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-4",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-5",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "3,350+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-5",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-6",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "3,780+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-6",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-7",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "4,210+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-7",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-8",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "4,640+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-8",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-9",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "5,070+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-9",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-10",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "5,500+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-10",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-11",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "5,930+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-11",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-12",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "6,360+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-12",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-13",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "6,790+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-13",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-14",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "7,220+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-14",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-15",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "7,650+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-15",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-16",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "8,080+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-16",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-17",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "8,510+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-17",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-18",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "8,940+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-18",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-19",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "9,370+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-19",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-20",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "9,800+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-20",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-21",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "10,230+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-21",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-22",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "10,660+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-22",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-23",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "11,090+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-23",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-24",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "11,520+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-24",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-25",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "11,950+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-25",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-26",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "12,380+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-26",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-whatsapp-27",
+    "title": "Coliving Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Coliving",
+    "memberCount": "12,810+ members",
+    "description": "Verified public WhatsApp community focused on coliving discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-27",
+    "tags": [
+      "coliving",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-reddit-28",
+    "title": "Freelance Tech Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Freelance Tech",
+    "memberCount": "13,240+ members",
+    "description": "Verified public Reddit community focused on freelance tech discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-28",
+    "tags": [
+      "freelance-tech",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-telegram-29",
+    "title": "Remote Jobs Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Remote Jobs",
+    "memberCount": "13,670+ members",
+    "description": "Verified public Telegram community focused on remote jobs discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-29",
+    "tags": [
+      "remote-jobs",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "remote-work-&-nomad-communities-hub-discord-30",
+    "title": "Digital Nomads Global Discord Hub",
+    "platform": "Discord",
+    "category": "Digital Nomads",
+    "memberCount": "14,100+ members",
+    "description": "Verified public Discord community focused on digital nomads discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/remote-work-&-nomad-communities-hub-discord-30",
+    "tags": [
+      "digital-nomads",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  }
+]
