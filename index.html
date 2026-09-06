@@ -353,7 +353,7 @@
         .nav-btn:hover { opacity: 0.95; }
 
         header { text-align: center; padding: 45px 20px 30px; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin-bottom: 10px; font-weight: 600; letter-spacing: -0.5px; background: linear-gradient(135deg, #fff 40%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4.5vw, 2.8rem); margin-bottom: 10px; font-weight: 600; letter-spacing: -0.5px; background: linear-gradient(135deg, #fff 40%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .subtitle { color: var(--muted); max-width: 650px; margin: 0 auto 25px; font-size: 1.1rem; }
 
         .nomad-ticker-banner {
@@ -431,7 +431,11 @@
         .tag { font-size: 0.75rem; color: var(--accent); background: rgba(6,182,212,0.1); padding: 3px 8px; border-radius: 4px; font-weight: 500; }
         .card-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--border); padding-top: 16px; }
         .activity-pulse { font-size: 0.82rem; color: #10b981; display: flex; align-items: center; gap: 6px; font-weight: 600; }
-        .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981; }
+        .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981; display: inline-block; animation: pulseDot 2s infinite ease-in-out; }
+        @keyframes pulseDot {
+            0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 10px #10b981; }
+            50% { opacity: 0.35; transform: scale(0.85); box-shadow: 0 0 4px #10b981; }
+        }
 
         .card-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
         .btn-copy-invite { background: rgba(255,255,255,0.06); color: var(--muted); border: 1px solid var(--border); padding: 8px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
@@ -449,7 +453,17 @@
         .footer-bottom { text-align: center; color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border); margin-top: 40px; padding-top: 25px; }
 
         .mobile-dock { display: none; position: fixed; bottom: 0; left: 0; right: 0; background: rgba(3, 19, 26, 0.95); backdrop-filter: blur(14px); border-top: 1px solid var(--border); padding: 10px 14px; z-index: 9999; gap: 8px; }
-        @media (max-width: 768px) { .mobile-dock { display: flex; } body { padding-bottom: 90px; } .footer-grid { grid-template-columns: 1fr; } .nav-menu { display: none; } }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.1rem; }
+            .grid { grid-template-columns: 1fr; }
+            .mobile-dock { display: flex; }
+            body { padding-bottom: 90px; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .nav-menu { display: none; }
+            .dock-btn { min-height: 44px; display: flex; align-items: center; justify-content: center; }
+            .btn-copy-invite, .btn-join { min-height: 42px; }
+            .filter-btn { min-height: 40px; }
+        }
         .dock-btn { flex: 1; padding: 10px; border-radius: 8px; background: var(--surface); border: 1px solid var(--border); color: #fff; font-weight: 600; font-size: 0.82rem; cursor: pointer; text-align: center; }
         .dock-btn-accent { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 700; }
     </style>
@@ -568,7 +582,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-1')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-1')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-1')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-1" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-1" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -591,7 +605,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-2')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-2')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-2')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-2" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-2" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -614,7 +628,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-3')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-3')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-3')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-3" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-3" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -637,7 +651,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-4')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-4')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-4')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-4" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-4" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -660,7 +674,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-5')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-5')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-5')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-5" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-5" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -683,7 +697,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-6')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-6')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-6')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-6" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-6" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -706,7 +720,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-7')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-7')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-7')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-7" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-7" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -729,7 +743,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-8')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-8')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-8')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-8" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-8" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -752,7 +766,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-9')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-9')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-9')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-9" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-9" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -775,7 +789,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-10')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-10')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-10')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-10" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-10" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -798,7 +812,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-11')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-11')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-11')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-11" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-11" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -821,7 +835,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-12')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-12')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-12')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-12" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-12" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -844,7 +858,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-13')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-13')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-13')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-13" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-13" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -867,7 +881,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-14')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-14')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-14')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-14" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-14" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -890,7 +904,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-15')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-15')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-15')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-15" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-15" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -913,7 +927,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-16')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-16')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-16')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-16" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-16" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -936,7 +950,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-17')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-17')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-17')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-17" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-17" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -959,7 +973,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-18')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-18')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-18')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-18" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-18" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -982,7 +996,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-19')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-19')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-19')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-19" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-19" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1005,7 +1019,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-20')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-20')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-20')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-20" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-20" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1028,7 +1042,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-21')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-21')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-21')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-21" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-21" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1051,7 +1065,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-22')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-22')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-22')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-22" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-22" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1074,7 +1088,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-23')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-23')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-23')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-23" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-23" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1097,7 +1111,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-24')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-24')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-24')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-24" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-24" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1120,7 +1134,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-25')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-25')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-25')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-25" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-25" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1143,7 +1157,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-26')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-26')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-26')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-26" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-26" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1166,7 +1180,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-27')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-27')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-27')">📋 Copy Invite</button><a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-27" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/remote-work-&-nomad-communities-hub-whatsapp-27" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1189,7 +1203,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-28')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-28')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-28')">📋 Copy Invite</button><a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-28" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/remote-work-&-nomad-communities-hub-reddit-28" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1212,7 +1226,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-29')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-29')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-29')">📋 Copy Invite</button><a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-29" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/remote-work-&-nomad-communities-hub-telegram-29" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1235,7 +1249,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-30')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-30')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/remote-work-&-nomad-communities-hub-discord-30')">📋 Copy Invite</button><a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-30" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/remote-work-&-nomad-communities-hub-discord-30" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
