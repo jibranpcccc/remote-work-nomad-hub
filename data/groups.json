@@ -1,6 +1,25 @@
 [
   {
     "id": "remote-work-nomad-hub-reddit-20260913-1",
+    "title": "r/Notion Workspace Architects",
+    "platform": "Reddit",
+    "category": "Productivity Systems",
+    "memberCount": "340,000+ members",
+    "description": "Template sharing, formula 2.0 tutorials, GTD dashboards, and Notion database relation architecture.",
+    "joinUrl": "https://www.reddit.com/r/Notion/",
+    "tags": [
+      "notion",
+      "templates",
+      "gtd",
+      "reddit"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-13"
+  },
+  {
+    "id": "remote-work-nomad-hub-reddit-20260913-1",
     "title": "r/ObsidianMD Personal Knowledge",
     "platform": "Reddit",
     "category": "Knowledge Management",
@@ -15,7 +34,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
   },
   {
