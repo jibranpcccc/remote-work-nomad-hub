@@ -4,10 +4,17 @@
     <title>Remote Work &amp; Nomad Communities Hub</title>
     <link>https://jibranpcccc.github.io/remote-work-nomad-hub/</link>
     <description>Verified community directory and updates.</description>
-    <lastBuildDate>Mon, 19 Oct 2026 06:00:05 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 06:00:07 GMT</lastBuildDate>
     <atom:link href="https://jibranpcccc.github.io/remote-work-nomad-hub/feed.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-                                                                                                                                        <item>
+                                                                                                                                            <item>
+      <title>📅 Today's Fresh Pick: Hacker News Community (Forum)</title>
+      <link>https://news.ycombinator.com</link>
+      <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-forum-20261003-1-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 06:00:07 GMT</pubDate>
+      <description>Newly verified community added to Remote Work &amp; Nomad Communities Hub: Y Combinator's flagship intellectual community discussing software engineering, science, and startup mechanics.</description>
+    </item>
+<item>
       <title>📅 Today's Fresh Pick: Hacker News Community (Forum)</title>
       <link>https://news.ycombinator.com</link>
       <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-forum-20261003-1-2026-10-19</guid>
@@ -174,13 +181,6 @@
       <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-reddit-20260920-1-2026-09-20</guid>
       <pubDate>Sun, 20 Sep 2026 06:00:05 GMT</pubDate>
       <description>Newly verified community added to Remote Work &amp; Nomad Communities Hub: Brand positioning, paid acquisition, funnel attribution, CRO testing, and content marketing case studies.</description>
-    </item>
-<item>
-      <title>📅 Today's Fresh Pick: r/SEO Search Engine Optimization (Reddit)</title>
-      <link>https://www.reddit.com/r/SEO/</link>
-      <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-reddit-20260919-1-2026-09-19</guid>
-      <pubDate>Sat, 19 Sep 2026 06:00:05 GMT</pubDate>
-      <description>Newly verified community added to Remote Work &amp; Nomad Communities Hub: Technical SEO, Core Web Vitals, Google algorithm update analysis, backlink audits, and Generative Engine Optimization.</description>
     </item>
   </channel>
 </rss>
