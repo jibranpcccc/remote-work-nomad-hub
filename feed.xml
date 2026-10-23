@@ -4,10 +4,17 @@
     <title>Remote Work &amp; Nomad Communities Hub</title>
     <link>https://jibranpcccc.github.io/remote-work-nomad-hub/</link>
     <description>Verified community directory and updates.</description>
-    <lastBuildDate>Thu, 22 Oct 2026 06:00:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 06:00:05 GMT</lastBuildDate>
     <atom:link href="https://jibranpcccc.github.io/remote-work-nomad-hub/feed.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-                                                                                                                                                    <item>
+                                                                                                                                                        <item>
+      <title>📅 Today's Fresh Pick: Hacker News Community (Forum)</title>
+      <link>https://news.ycombinator.com</link>
+      <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-forum-20261003-1-2026-10-23</guid>
+      <pubDate>Fri, 23 Oct 2026 06:00:05 GMT</pubDate>
+      <description>Newly verified community added to Remote Work &amp; Nomad Communities Hub: Y Combinator's flagship intellectual community discussing software engineering, science, and startup mechanics.</description>
+    </item>
+<item>
       <title>📅 Today's Fresh Pick: Hacker News Community (Forum)</title>
       <link>https://news.ycombinator.com</link>
       <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-forum-20261003-1-2026-10-22</guid>
@@ -174,13 +181,6 @@
       <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-telegram-20260923-1-2026-09-23</guid>
       <pubDate>Wed, 23 Sep 2026 06:00:06 GMT</pubDate>
       <description>Newly verified community added to Remote Work &amp; Nomad Communities Hub: Updates on venture capital fundings, Product Hunt launches, and SaaS acquisition multiples.</description>
-    </item>
-<item>
-      <title>📅 Today's Fresh Pick: SEO Professionals Discord (Discord)</title>
-      <link>https://discord.gg/seo</link>
-      <guid isPermaLink="false">https://jibranpcccc.github.io/remote-work-nomad-hub/#remote-work-nomad-hub-discord-20260922-1-2026-09-22</guid>
-      <pubDate>Tue, 22 Sep 2026 06:00:06 GMT</pubDate>
-      <description>Newly verified community added to Remote Work &amp; Nomad Communities Hub: Real-time discussions between agency operators and enterprise SEO consultants on search visibility.</description>
     </item>
   </channel>
 </rss>
